@@ -4,8 +4,10 @@
 cd src/local_passport_auth_service
 2. Cài đặt dependencies bash Copy code: npm install express Basic Auth Chạy server bash Copy code: node app.js
 Kiểm tra API
+mongo trước khi đăng ký 
+<img width="960" height="540" alt="3000" src="https://github.com/VoVanTuTai/local_passport_auth_service/blob/main/Images_report/mongo_after_register.png" />
 POST: http://localhost:3000/auth/register (đăng ký sai)
-body->raw->chỉnh type sang Json nội dung "{"":"", "password":"12345"}"
+body->raw->chỉnh type sang Json nội dung "{"username":"", "password":"12345"}"
 <img width="960" height="540" alt="3000" src="https://github.com/VoVanTuTai/local_passport_auth_service/blob/main/Images_report/register_error.png" />
 POST: http://localhost:3000/auth/register (đăng ký đúng)
 body->raw->chỉnh type sang Json nội dung "{"username":"VoVanTuTai", "password":"12345"}"
